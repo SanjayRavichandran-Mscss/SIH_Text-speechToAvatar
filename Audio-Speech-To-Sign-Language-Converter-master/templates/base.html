@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script src="https://path-to-your-zego-uikit-prebuilt.js"></script>
 <style>
 .center {
   display: block;
@@ -12,9 +13,11 @@
 }
 #nav {
   list-style-type: none;
+  display:flex;
+  justify-content:center;
   margin-top:0;
   padding: 0;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #feda6a;
 }
 h2
@@ -67,7 +70,7 @@ li a:hover {
   position: fixed;
   z-index: 1;
   top: 50;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding-top: 20px;
 
 }
@@ -206,6 +209,22 @@ body
     color: red;
     font-weight: bold;
 }
+
+.keyWords{
+  display:none;
+  /* visibility:hidden; */
+}
+
+.videoCall{
+  height:380px;
+  width:750px;
+ 
+}
+
+
+
+
+
 </style>
 <title>Homepage</title>
 </head>
@@ -216,19 +235,19 @@ body
 <br>
 <body>
 <ul id="nav">
-  <li class="li"><a class="active" href="{% url 'home' %}">Home</a></li>
-  <li class="li"><a href="{% url 'animation' %}">Convertor</a></li>
-  {% if not user.is_authenticated %}
-  <li class="li"><a href="{% url 'signup' %}">Sign Up</a></li>
-  {% endif %}
-  {% if user.is_authenticated %}
-  <li class="li"><a href="{% url 'logout' %}">Log-Out</a></li>
-  {% else %}
-    <li class="li"><a href="{% url 'login' %}">Log-in</a></li>
-  {% endif %}
-  <li class="li"><a href="{% url 'contact' %}">Contact</a></li>
-  <li class="li"><a href="{% url 'about' %}">About</a></li>
-</ul>
+  <!-- <li class="li"><a class="active" href="{% url 'home' %}">Home</a></li> -->
+  <!-- <li class="li"><a href="{% url 'animation' %}">Convertor</a></li> -->
+  <!-- {% if not user.is_authenticated %} -->
+  <!-- <li class="li"><a href="{% url 'signup' %}">Sign Up</a></li> -->
+  <!-- {% endif %} -->
+  <!-- {% if user.is_authenticated %} -->
+  <!-- <li class="li"><a href="{% url 'logout' %}">Log-Out</a></li> -->
+  <!-- {% else %} -->
+    <!-- <li class="li"><a href="{% url 'login' %}">Log-in</a></li> -->
+  <!-- {% endif %} -->
+  <!-- <li class="li"><a href="{% url 'contact' %}">Contact</a></li> -->
+  <!-- <li class="li"><a href="{% url 'about' %}">About</a></li> -->
+</ul> 
 
 <div class="wrapper" >
   {% block content %}

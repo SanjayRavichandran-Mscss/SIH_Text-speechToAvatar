@@ -49,7 +49,7 @@ li a:hover {
   width: 89%;
 	height:70%;
 	padding: 5%;
-	background: #feda6a;
+	/* background: #feda6a; */
 	border-bottom: 2px solid #393f4d;;
 	border-top-style: none;
 	border-right-style: none;
@@ -62,7 +62,7 @@ li a:hover {
 
 .form-style button:hover {
   background-color: #393f4d;
-  color: #feda6a;
+  /* color: #feda6a; */
   font-weight: bold;
 }
 .split {
@@ -78,12 +78,12 @@ li a:hover {
 
 .left {
   left: 15;
-  border-right: 0px #feda6a solid;
+  /* border-right: 0px #feda6a solid; */
 }
 
 .right {
   right: 0;
-  border-left: 1px #feda6a solid;
+  /* border-left: 1px #feda6a solid; */
 }
 
 .mytext {
@@ -101,7 +101,7 @@ li a:hover {
 
   .mic {
       border:1px solid #393f4d;
-      background:#feda6a;
+      /* background-color: #feda6a; */
       vertical-align:top;
       padding:0px;
       margin:0;
@@ -119,7 +119,7 @@ li a:hover {
     height: 42px;
     width: 160px;
     text-align: center;
-    background-color: #feda6a;
+    /* background-color:    */
     color: #393f4d;
     font-weight: bold;
     font-size: 24px;
@@ -127,14 +127,17 @@ li a:hover {
     vertical-align:top;
 }
 .submit:hover {
-  background-color: #393f4d;
-  color: #feda6a;
+  color: green;
   font-weight: bold;
 }
-.td {
-  color: #feda6a;
-  font-weight: bold;
-  font-size: 20px;
+table {
+  margin-top: 65px;
+  color:green;
+  background-color: #fff;
+  border-radius:10px;
+  height:60px;
+  font-size:20px;
+
 }
 
 body
@@ -149,7 +152,7 @@ body
 	padding: 16px;
 
 }
-.form-style h1, .form-style a{
+/* .form-style h1, .form-style a{
 	padding: 20px 0;
   font-size: 24px;
 	font-weight: bold;
@@ -157,7 +160,7 @@ body
 	text-align: center;
 	margin: -16px -16px 16px -16px;
   color:#feda6a
-}
+} */
 .form-style input[type="text"],
 .form-style input[type="password"],
 .form-style input[type="date"],
@@ -204,7 +207,7 @@ body
 }
 
 .site-form span,label{
-  color: #feda6a;
+  color: green;
 }
 .errorlist{
     color: red;
@@ -227,28 +230,15 @@ body
 
 
 </style>
-<title>Homepage</title>
+<title>SIH 2024</title>
 </head>
 <div style="background-color:#404040;color:#feda6a;padding:10 10 1 10;border: 1px white groove;border-radius:10px;margin-bottom:0;">
 
-<h1 style="text-align:center;color:white;font-family:Georgia, 'Times New Roman', Times, serif">Indian Sign Language Translation</h1>
+<h1 style="text-align:center;color:white;font-family:unset;">SignBridge India
+</h1>
 </div>
 <br>
 <body>
-<ul id="nav">
-  <!-- <li class="li"><a class="active" href="{% url 'home' %}">Home</a></li> -->
-  <!-- <li class="li"><a href="{% url 'animation' %}">Convertor</a></li> -->
-  <!-- {% if not user.is_authenticated %} -->
-  <!-- <li class="li"><a href="{% url 'signup' %}">Sign Up</a></li> -->
-  <!-- {% endif %} -->
-  <!-- {% if user.is_authenticated %} -->
-  <!-- <li class="li"><a href="{% url 'logout' %}">Log-Out</a></li> -->
-  <!-- {% else %} -->
-    <!-- <li class="li"><a href="{% url 'login' %}">Log-in</a></li> -->
-  <!-- {% endif %} -->
-  <!-- <li class="li"><a href="{% url 'contact' %}">Contact</a></li> -->
-  <!-- <li class="li"><a href="{% url 'about' %}">About</a></li> -->
-</ul> 
 
 <div class="wrapper" >
   {% block content %}
